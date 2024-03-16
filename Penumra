@@ -1,0 +1,39 @@
+Menggunakan PCLI
+
+Install Bahan
+
+apt install git
+curl -O -L https://github.com/penumbra-zone/penumbra/releases/download/v0.67.1/pcli-x86_64-unknown-linux-gnu.tar.xz
+unxz pcli-x86_64-unknown-linux-gnu.tar.xz
+tar -xf pcli-x86_64-unknown-linux-gnu.tar
+sudo mv pcli-x86_64-unknown-linux-gnu/pcli /usr/local/bin/
+
+Import Pharse Yang Tadi udah di Buat
+
+pcli init soft-kms import-phrase
+
+Paste Pharse Kalian (Emang Kaga Keliatan Jadi Paste aja Sekali terus Enter)
+
+Check Saldo
+
+pcli view balance
+
+Send Transaksi
+
+pcli tx send 10penumbra --to Isi-address-penumbra
+
+Stake Your Penumbra ke Validator Orang | Check Address Validator Orang dan Salin Bebas
+
+pcli query validator list
+
+Stake 10 Token ke Validator Address Yang udah di Copy Tadi
+
+pcli tx delegate 10penumbra --to Isi-address-validator
+
+Untuk Membatalkan Transaksi aatau Undelegate (Optional)
+
+pcli tx undelegate-claim
+
+Noted : Untuk Full Node Bentar Bang, Pelan Pelann
+
+Source Full Docs : https://guide.penumbra.zone/main/pcli/governance.html
