@@ -1,0 +1,13 @@
+Update Dusk Network ITN Installer v0.1.9 - Migration Bugfix And Replay 
+
+curl --proto '=https' --tlsv1.2 -sSfL https://github.com/dusk-network/itn-installer/releases/download/v0.1.9/itn-installer.sh | sudo sh
+
+sudo download_state
+
+service rusk start
+
+ruskquery block-height
+
+tail -F /var/log/rusk.log
+
+Done
