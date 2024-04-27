@@ -1,6 +1,6 @@
 {
   "name": "hibber",
-  "version": "1.1.5",
+  "version": "1.1.8",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,19 @@
   "bugs": {
     "url": "https://github.com/Drakebased/Hibber/issues"
   },
-  "homepage": "https://github.com/Drakebased/Hibber#readme"
+  "homepage": "https://github.com/Drakebased/Hibber#readme",
+  "dependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.1.1",
+    "inquirer": "^9.2.20",
+    "jquery": "^3.7.1",
+    "postcss": "^8.4.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.4.5"
+  }
 }
